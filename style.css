@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.file-action-cont {
+  height: 3rem;
+  background-color: rgb(10, 161, 111);
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.8rem;
+}
+
+.file-action {
+  padding-left: 1.5rem;
+}
+.cell-props-cont {
+  height: 3rem;
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 2rem;
+  font-size: 1.3rem;
+}
+.cell-props-cont * {
+  display: inline-block;
+}
+
+.cell-props-cont select {
+  border: none;
+  outline: 0px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.cell-props-font {
+  padding-left: 0.3rem;
+}
+.cell-props-size {
+  padding-left: 0.3rem;
+}
+
+.formula-cont {
+  height: 3rem;
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+}
+.formula-cont > * {
+  display: inline-block;
+  border: none;
+  outline: 0;
+}
+
+.fx-icon {
+  width: 2.2rem;
+}
+.cell-selected {
+  width: 5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+.formula {
+  width: calc(100vw - 2.2rem - 5rem - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.sheet-cont {
+  height: 3rem;
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+}
+.add-sheet {
+  width: calc(100vw - 1.5rem);
+  background-color: #ecf0f1;
+  height: 2rem;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 0.5rem;
+}
+
+.sheet-cont > * {
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.sheet-style {
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
+}
+
+.grid-cont {
+  height: calc(100vh - 3rem - 3rem - 3rem - 3rem);
+  position: relative;
+  overflow: scroll;
+}
+
+.grid-fake-block {
+  width: 3rem;
+  height: 3rem;
+  background-color: grey;
+  position: fixed;
+  z-index: 3;
+}
+
+.address-row-cont {
+  width: 3rem;
+  font-size: 1.6rem;
+  position: sticky; 
+  left: 0;
+  top: 3rem;
+}
+
+.row-id {
+  border: 0.1px solid #dfe4ea;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+
+.cell-cont {
+  position: absolute;
+  top: 0rem;
+  left: 3rem;
+
+}
+.address-cols-cont {
+  height: 3rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 3rem;
+}
+
+.cols-id {
+  font-size: 1.6rem;
+  width: 7rem;
+  text-align: center;
+  border: 0.1px solid #dfe4ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell-row {
+  display: flex;
+}
+
+.cell {
+  border: 0.1px solid #dfe4ea;
+  width: 7rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  outline:0;
+}

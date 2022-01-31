@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="file-action-cont">
+      <div class="file-action">Home</div>
+      <div class="file-action">File</div>
+      <div class="file-action">Insert</div>
+      <div class="file-action">Layout</div>
+      <div class="file-action">Help</div>
+    </div>
+    <div class="cell-props-cont">
+      <span class="material-icons"> content_copy </span
+      ><span class="material-icons"> content_cut </span
+      ><span class="material-icons"> content_paste </span>
+      <select name="" id="" class="cell-props-font">
+        <option value="monospace">Monospace</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="cursive">Cursive</option>
+        <option value="sans-serif">Sans-serif</option>
+      </select>
+      <select name="" id="" class="cell-props-size">
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+      </select>
+      <span class="material-icons"> format_bold </span
+      ><span class="material-icons"> format_italic </span
+      ><span class="material-icons"> format_underlined </span
+      ><span class="material-icons"> format_align_left </span
+      ><span class="material-icons"> format_align_center </span
+      ><span class="material-icons"> format_align_right </span>
+    </div>
+    <div class="formula-cont">
+      <input type="text" readonly class="cell-selected" />
+      <img
+        class="fx-icon"
+        src="https://img.icons8.com/ios/50/000000/formula-fx.png"
+      />
+      <input type="text" class="formula" />
+    </div>
+    <div class="grid-cont">
+      <div class="grid-fake-block"></div>
+      <div class="address-row-cont"></div>
+      <div class="cell-cont">
+        <div class="address-cols-cont"></div>
+      </div>
+    </div>
+    <div class="sheet-cont">
+      <span class="material-icons"> post_add </span>
+      <div class="add-sheet">
+        <div class="sheet-style">Sheet1</div>
+      </div>
+    </div>
+  </body>
+</html>
