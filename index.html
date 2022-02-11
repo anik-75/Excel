@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Excel</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <script src="script.js" defer></script>
+    <script src="storage.js" defer></script>
   </head>
   <body>
     <div class="file-action-cont">
@@ -32,16 +33,24 @@
       </select>
       <select name="" id="" class="cell-props-size">
         <option value="14">14</option>
-        <option value="15">15</option>
-        <option value="16">16</option>
-        <option value="17">17</option>
+        <option value="15">16</option>
+        <option value="16">18</option>
+        <option value="17">20</option>
       </select>
-      <span class="material-icons"> format_bold </span
-      ><span class="material-icons"> format_italic </span
-      ><span class="material-icons"> format_underlined </span
-      ><span class="material-icons"> format_align_left </span
-      ><span class="material-icons"> format_align_center </span
-      ><span class="material-icons"> format_align_right </span>
+      <span class="material-icons bold"> format_bold </span
+      ><span class="material-icons italic"> format_italic </span
+      ><span class="material-icons underline"> format_underlined </span
+      ><span class="left material-icons alignment"> format_align_left </span
+      ><span class="center material-icons alignment"> format_align_center </span
+      ><span class="right material-icons alignment"> format_align_right </span>
+      <div class="font-color-prop">
+        <span class="material-icons"> format_color_text </span>
+        <input type="color" class="font-color" />
+      </div>
+      <div class="background-color-prop">
+        <span class="material-icons"> format_color_fill </span>
+        <input type="color" class="background-color" />
+      </div>
     </div>
     <div class="formula-cont">
       <input type="text" readonly class="cell-selected" />

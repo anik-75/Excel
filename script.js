@@ -27,6 +27,11 @@ for(let  i = 0; i < rows; i++){
     let cell = document.createElement("div");
     cell.setAttribute("class", "cell");
     cell.setAttribute("contenteditable", "true");
+    
+    // colsAdd and rowAdd for cell and storage identification
+    cell.setAttribute("rowAdd", i);
+    cell.setAttribute("colAdd", j);
+
     displayCellSelectedAddress(cell, i, j);
     cellRow.append(cell);
   }
@@ -41,5 +46,11 @@ function displayCellSelectedAddress(cell, i, j){
     let selectedColAddress = String.fromCharCode(j+65);
     let selectedCellAddress = `${selectedColAddress}${selectedRowAddress}`;
     cellSelected.value = selectedCellAddress;
-  })
+  })      
+
 }
+
+// default Active Cell
+let defaultActiveCell = document.querySelector(".cell");
+defaultActiveCell.click();
+
