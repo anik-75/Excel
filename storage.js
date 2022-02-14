@@ -12,6 +12,9 @@ for (let i = 0; i < rows; i++) {
       fontFamily: "monospace",
       fontColor: "#000000",
       bgColor: "#ffffff",
+      value : "",
+      formula : "",
+      children:[],
     };
     sheetRow.push(sheetCellProp);
   }
@@ -205,6 +208,10 @@ function addListenerToAttachCellProperites(cell) {
         rightAlign.style.backgroundColor = activeColorProp;
         break;
     }
+
+    let formulaBar = document.querySelector('.formula-bar');
+    formulaBar.value = cellProp.formula;
+    cell.value = cellProp.value;
   });
 }
 
